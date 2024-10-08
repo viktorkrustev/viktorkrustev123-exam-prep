@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build_test:
+  build_unit_test:
 
     runs-on: ubuntu-latest
 
@@ -20,3 +20,5 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run test:unit
+    - name: Display SoftUni username
+      run: echo "viktorkrustev123"
