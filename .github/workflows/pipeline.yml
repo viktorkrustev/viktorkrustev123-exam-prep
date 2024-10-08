@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Use Node.js version 12.x
+    - name: Use Node.js version 20.8.0
       uses: actions/setup-node@v4
       with:
-        node-version: version 12.x
+        node-version: version 20.8.0
         cache: 'npm'
     - run: npm install
     - run: npm run test:unit
